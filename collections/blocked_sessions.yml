@@ -1,0 +1,11 @@
+fields:
+  id:
+    type: number
+    restriction_mode: A
+    constant: true
+    required: true
+  session_id:
+    type: string
+    restriction_mode: A
+    constant: true
+    required: true

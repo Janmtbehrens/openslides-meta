@@ -1433,10 +1433,6 @@ class Helper:
             replace_tables JSONB
         );
 
-        CREATE TABLE blocked_sessions (
-            session_id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-        );
-
         -- Log functions
 
         CREATE OR REPLACE PROCEDURE log_field_change(
@@ -1458,6 +1454,9 @@ class Helper:
                 )
             );
         END;
+        IF fqid_var LIKE 'blocked_sessions/%' THEN
+            PERFORM pg_notify('blocked_sessions_notify', fqid_var);
+        END IF;
         $log_field_change$ LANGUAGE plpgsql;
 
         CREATE FUNCTION log_modified_models() RETURNS trigger AS $log_modified_trigger$
