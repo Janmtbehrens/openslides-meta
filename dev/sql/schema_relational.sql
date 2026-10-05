@@ -152,10 +152,10 @@ BEGIN
             FROM unnest(COALESCE(EXCLUDED.updated_fields, '{}'::varchar[])) AS e
         )
     );
+    IF fqid_var LIKE 'blocked_sessions/%' THEN
+        PERFORM pg_notify('blocked_sessions_notify', fqid_var);
+    END IF;
 END;
-IF fqid_var LIKE 'blocked_sessions/%' THEN
-    PERFORM pg_notify('blocked_sessions_notify', fqid_var);
-END IF;
 $log_field_change$ LANGUAGE plpgsql;
 
 CREATE FUNCTION log_modified_models() RETURNS trigger AS $log_modified_trigger$
