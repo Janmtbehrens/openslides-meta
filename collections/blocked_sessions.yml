@@ -9,3 +9,7 @@ fields:
     restriction_mode: A
     constant: true
     required: true
+  timestamp:
+    type: timestamp
+    required: true
+    restriction_mode: A

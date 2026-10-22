@@ -1,0 +1,20 @@
+fields:
+  id:
+    type: number
+    restriction_mode: A
+    constant: true
+    required: true
+  token_hash:
+    type: string
+    restriction_mode: A
+    constant: true
+    required: true
+  idp_id:
+    type: string
+    restriction_mode: A
+    constant: true
+    required: true
+  timestamp:
+    type: timestamp
+    required: true
+    restriction_mode: A
