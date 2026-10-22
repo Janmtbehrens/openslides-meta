@@ -18,7 +18,7 @@ fields:
     type: text
     restriction_mode: A
   login_text:
-    type: text
+    type: HTMLStrict
     restriction_mode: A
   reset_password_verbose_errors:
     type: boolean
