@@ -9,10 +9,6 @@ from psycopg.types.json import Jsonb
 from src.db_utils import DbUtils
 from src.python_sql import Table
 
-# ADMIN_USERNAME = "admin"
-# ADMIN_PASSWORD = "admin"
-
-
 class BaseTestCase(TestCase):
     temporary_template_db = "openslides_template"
     work_on_test_db = "openslides_test"
@@ -184,8 +180,6 @@ class BaseTestCase(TestCase):
                         "last_name": "Administrator",
                         "is_active": True,
                         "is_physical_person": True,
-                        "password": "316af7b2ddc20ead599c38541fbe87e9a9e4e960d4017d6e59de188b41b2758flD5BVZAZ8jLy4nYW9iomHcnkXWkfk3PgBjeiTSxjGG7+fBjMBxsaS1vIiAMxYh+K38l0gDW4wcP+i8tgoc4UBg==",
-                        "default_password": "admin",
                         "can_change_own_password": True,
                         "gender": "male",
                         "default_vote_weight": "1.000000",

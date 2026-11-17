@@ -2478,8 +2478,6 @@ CREATE TABLE user_t (
         CONSTRAINT default_user_is_active DEFAULT True,
     is_physical_person boolean
         CONSTRAINT default_user_is_physical_person DEFAULT True,
-    password varchar(256),
-    default_password varchar(256),
     can_change_own_password boolean
         CONSTRAINT default_user_can_change_own_password DEFAULT True,
     email varchar(256),
