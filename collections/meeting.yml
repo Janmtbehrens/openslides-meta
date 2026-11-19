@@ -642,7 +642,7 @@ fields:
 
       Username: {username}
 
-      Password: {password}
+      Password: {magicLink}
 
 
 

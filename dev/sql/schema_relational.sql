@@ -1460,7 +1460,7 @@ this is your personal OpenSlides login:
 
 {url}
 Username: {username}
-Password: {password}
+Password: {magicLink}
 
 
 This email was generated automatically.',
@@ -1940,7 +1940,7 @@ this is your personal OpenSlides login:
 
 {url}
 Username: {username}
-Password: {password}
+Password: {magicLink}
 
 
 This email was generated automatically.',
