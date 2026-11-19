@@ -2467,9 +2467,6 @@ CREATE TABLE user_t (
     idp_id varchar(256)
         CONSTRAINT unique_user_idp_id UNIQUE
         CONSTRAINT minlength_user_idp_id CHECK (char_length(idp_id) >= 1),
-    saml_id varchar(256)
-        CONSTRAINT unique_user_saml_id UNIQUE
-        CONSTRAINT minlength_user_saml_id CHECK (char_length(saml_id) >= 1),
     pronoun varchar(32),
     title varchar(256),
     first_name varchar(256),
@@ -2499,7 +2496,6 @@ CREATE TABLE user_t (
 
 
 comment on column user_t.idp_id is 'unique-key from IDP for login';
-comment on column user_t.saml_id is 'unique-key from IdP for SAML login';
 comment on column user_t.organization_management_level is 'Hierarchical permission level for the whole organization.';
 
 

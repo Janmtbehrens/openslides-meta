@@ -19,12 +19,6 @@ fields:
     unique: true
     restriction_mode: B
     description: unique-key from IDP for login
-  saml_id:
-    type: string
-    minLength: 1
-    unique: true
-    restriction_mode: B
-    description: unique-key from IdP for SAML login
   pronoun:
     type: string
     maxLength: 32

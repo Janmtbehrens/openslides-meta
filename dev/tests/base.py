@@ -153,7 +153,6 @@ class BaseTestCase(TestCase):
                         "saml_login_button_text": "SAML Login",
                         "saml_attr_mapping": Jsonb(
                             {
-                                "saml_id": "username",
                                 "title": "title",
                                 "first_name": "firstName",
                                 "last_name": "lastName",
