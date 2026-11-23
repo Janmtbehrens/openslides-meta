@@ -1460,7 +1460,10 @@ this is your personal OpenSlides login:
 
 {url}
 Username: {username}
-Password: {magicLink}
+Sign in to OpenSlides: {magicLink}
+
+Alternatively scan this QR Code on your phone:
+{qrCode}
 
 
 This email was generated automatically.',
@@ -1940,7 +1943,10 @@ this is your personal OpenSlides login:
 
 {url}
 Username: {username}
-Password: {magicLink}
+Sign in to OpenSlides: {magicLink}
+
+Alternatively scan this QR Code on your phone:
+{qrCode}
 
 
 This email was generated automatically.',

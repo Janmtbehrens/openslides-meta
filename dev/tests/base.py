@@ -147,7 +147,7 @@ class BaseTestCase(TestCase):
                         "theme_id": cls.theme1_id,
                         "users_email_sender": "OpenSlides",
                         "users_email_subject": "OpenSlides access data",
-                        "users_email_body": "Dear {name},\n\nthis is your personal OpenSlides login:\n\n{url}\nUsername: {username}\nPassword: {magicLink}\n\n\nThis email was generated automatically.",
+                        "users_email_body": "Dear {name},\n\nthis is your personal OpenSlides login:\n\n{url}\nUsername: {username}\nSign in to OpenSlides: {magicLink}\n\nAlternatively scan this QR Code on your phone:\n{qrCode}\n\n\nThis email was generated automatically.",
                         "url": "https://example.com",
                         "saml_enabled": False,
                         "saml_login_button_text": "SAML Login",
